@@ -30,15 +30,28 @@ header {
 
 }
 
-li {
+.nav-link {
     border-bottom: solid;
     list-style: none;
     width: 100%;
+    font-size: larger;
+    text-align: center;
 }
 
-#main-doc {
+main {
     display: block;
     position: right;
     margin-left: 310px;
     padding-left: 2rem;
+
+}
+
+hr {
+    border-color: rgba(0, 0, 0, 0.315);
+    margin-top: 3rem;
+
+}
+
+h1, h3 {
+    text-align: center;
 }

@@ -2,9 +2,10 @@ html {
     font-family: 'Courier New', Courier, monospace;
 }
 
+/*Styling for the navigation bar*/
 nav {
     display: block;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     border-right: solid;
@@ -16,10 +17,7 @@ nav {
     
 }
 
-header {
-    margin: 1em;
-}
-
+/*Styling for navigation list items*/
 .nav-bar ul {
     display: block;
     margin-block-start: 1em;
@@ -27,8 +25,37 @@ header {
     margin-inline-start: 1em;
     margin-inline-end: 1em;
     padding: 0%;
-
 }
+
+.logo-placeholder {
+    display: block;
+    position: relative;
+    background-color: #cc4008;
+    height: 100px;
+    width: 100px;
+    color: aliceblue;
+    font-size: x-large;
+    margin: 18em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.logo-text {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    margin: 10px 10px 10px 10px;
+}
+
+
+/*Keep margin between 1 and 2em*/
+header {
+    margin: 1em;
+}
+
+
 
 .nav-link {
     border-bottom: solid;
@@ -54,4 +81,11 @@ hr {
 
 h1, h3 {
     text-align: center;
+}
+
+.components {
+    background-color: rgb(109, 114, 114); 
+    color: rgb(238, 238, 238); 
+    display: block;
+    padding-left: 4rem;
 }

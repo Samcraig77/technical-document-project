@@ -15,13 +15,22 @@
         <li class="nav-link"><a href="#componets">Components</a></li>
         <li class="nav-link"><a href="#assembly">Assembly</a></li>
     </ul>
-    <span class="logo-placeholder"><div class="logo-text">PC</div></span>
- </nav>
+    <div clas="nav-pc">
+    <img class="nav-pc" id="fan-one" src="https://cdn.pixabay.com/photo/2012/04/16/13/02/propeller-35917_960_720.png" alt="Fan">
+    <img class="nav-pc" id="fan-two" src="https://cdn.pixabay.com/photo/2012/04/16/13/02/propeller-35917_960_720.png" alt="Fan">
+    <span class="nav-pc" id="logo">
+        <button class="nav-pc" id="logo-button">PC</button>
+       <div class="logo-text"></div>
+    </span>
+    </div>
+</nav>
 
  <main id="main-doc">
-    <article id="intro">
+    
         <h1>How to Build a PC</h1>
+        <section class="main-section" id="intro">
         <h3>Introduction</h3>
+        <article id="intro">
         <p>
             Building a PC is a complex but rewarding process that involves assembling various hardware components 
             to create a fully functional personal computer. The first step in building a PC is to gather all the 
@@ -32,8 +41,11 @@
         </p>
     <hr>
 </article>
-<article id="components">
+</section>
+
     <h3>Components</h3>
+    <section class="main-section" id="components">
+    <article id="components">
     <p>
         Before we start putting anything in our case or assembling 
         the components that connect to the motherboard, lets make
@@ -59,18 +71,27 @@
         </p>
 
 </article>
-
+</section>
 <hr>
+<section class="main-section" id="assembly">
 <article id="assembly">
     <h3>Assembly</h3>
     <p>
         Once you make sure you have all the listed components, you can
-        begin assembling your computer. 
-    </p>
+        begin assembling your computer.</p>
+
+        <code id="components-in-code">
+            <ol class="assembly">
+                <li>Begin by mounting your power supply unit and motherboard into your case.</li>
+                <li>Insert your CPU into the socket in the motherboard, and install the RAM DIMMs.</li>
+                <li></li>
+            </ol>
+
+        </code>
 
 
 </article>
-
+</section>
 
 </main>
 </body>

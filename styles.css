@@ -2,12 +2,12 @@ html {
     font-family: 'Courier New', Courier, monospace;
 }
 
-/*Styling for the navigation bar*/
+/* Styling for the navigation bar */
 nav {
-    display: block;
-    position: absolute;
-    left: 0;
+    display: inline;
+    position: fixed;
     top: 0;
+    left: 0;
     border-right: solid;
     border-right-color: black;
     height: 100%;
@@ -17,8 +17,8 @@ nav {
     
 }
 
-/*Styling for navigation list items*/
-.nav-bar ul {
+/* Styling for navigation list items */
+.navbar ul {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -60,7 +60,7 @@ nav {
 
 
 
-/*Keep margin between 1 and 2em*/
+/* Keep margin between 1 and 2em */
 header {
     margin: 1em;
 }
@@ -76,7 +76,7 @@ header {
 }
 
 main {
-    display: block;
+    display: inline-block;
     position: right;
     margin-left: 310px;
     padding-left: 2rem;
@@ -145,10 +145,6 @@ h1, h3 {
      animation: spin 2s infinite linear;
     border-radius: 50%;
     padding: auto;
-    
-
-    
-
     }   
      
     img{
@@ -162,4 +158,20 @@ h1, h3 {
      100%{
      transform: rotateZ(-360deg);
      }
+    }
+
+    #fan-one:hover {
+        animation-play-state: paused;
+    }
+
+    #fan-two:hover {
+        animation-play-state: paused;
+    }
+
+    @media only screen and (max-width: 815px) {
+        /* For mobile phones: */
+        #navbar ul {
+          border: 1px solid;
+          height: 207px;
+        }
     }
